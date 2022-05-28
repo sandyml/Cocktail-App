@@ -1,0 +1,62 @@
+body {background-color: rgb(9, 131, 101);}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+}
+
+#list-item__center {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#strIngredient {
+    display: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#drink-section img {
+    vertical-align: middle;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    border-style: double;
+}
+
+#strDrink {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-style: double;
+}
+
+.card {
+    position: relative;
+    display: auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(145, 70, 8);
+}
+
