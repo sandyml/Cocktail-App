@@ -60,9 +60,5 @@ function displayRandomCocktail(cocktail) {
     card.innerHTML = cocktail.drinks[0].strInstructions;
 
     drinkSection.appendChild(card);
+
 }
-
-
-
-
-
