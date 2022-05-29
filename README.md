@@ -1,5 +1,5 @@
 # Random Cocktail 
-Don't know what to drink? Click the 'Random Cocktail' button down below. There are over 635 cocktails at random - you won't get the same cocktail at random. 
+This application is designed for individuals to be creative with their cocktail of choice when they want to explore something different instead of the same kind of cocktails. Users can explore over 600 cocktails at random with this generator. By clicking the button, it will give the users photos of how the cocktails look like and recipes and instructions. 
 
 ## Project Description
 
