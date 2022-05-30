@@ -4,14 +4,15 @@ body {
     margin-bottom: 50px;
     text-align: center;
     background-color: #ae7e4e;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Lucida Sans';
 }
 
 header {
-    background-image: url(https://i.pinimg.com/564x/8d/8c/3b/8d8c3b8aaceb194a3a04c450f3132e76.jpg);
-    /* image sourced from: https://i.pinimg.com/564x/8d/8c/3b/8d8c3b8aaceb194a3a04c450f3132e76.jpg */
+    background-image: url(https://i.etsystatic.com/6156248/r/il/ef5ec8/3831392983/il_1588xN.3831392983_3vwq.jpg);
+    /* image sourced from: https://www.etsy.com/listing/733374547/design-your-own-1000-drink-images */
     background-size: cover;
-    height: 250px;
+    box-sizing: border-box;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,26 +27,12 @@ element.style {
     transition: background-color 300ms;
 }
 
-h1{
+h1 {
     width: 100%;
     text-align: center;
-    color: white;
-}
-
-h2{
-    width: 100%;
-    text-align: center;
-}
-
-h5 {
     color: rgb(0, 0, 0);
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 10px;
-    line-height: 25px;
-    font-size: 15px;
-    font-style: italic;
+    font-family: 'Arial';
+
 }
   
 #list-item__center {
@@ -54,9 +41,18 @@ h5 {
 }
 
 img {
-    display: block;
+    display: flex;
+    border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.drink-thumbnail {
+    width: 200px;
+    border-radius: 50%;
+    order: -2;
+    border: 3px solid whitesmoke;
+    margin-top: 20px;
 }
 
 .center {
@@ -112,3 +108,21 @@ button {
     font-family: 'Roboto', sans-serif;
 }
 
+#main-container {
+    background-size: 100%;
+    height: 100px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-image: url(https://i.etsystatic.com/6156248/r/il/ef5ec8/3831392983/il_1588xN.3831392983_3vwq.jpg);
+    /* image sourced from: https://www.etsy.com/listing/733374547/design-your-own-1000-drink-images */
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}

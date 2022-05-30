@@ -1,10 +1,9 @@
 console.info('index.js loaded');
 
 document.addEventListener('prechange',function(event){
- document.querySelector('ons-toolbar .center')
+document.querySelector('ons-toolbar .center')
     .innerHTML=event.tabItem.getAttribute('label');
 });
-
 
 function getRandomCocktail() {
     fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
@@ -29,17 +28,15 @@ getRandomCocktail();
 
 function displayRandomCocktail(cocktail) {
     console.log(cocktail.drinks[0]);
-
     let drinkSection = document.querySelector('#drink-section');
-
     let drinkName = document.createElement('h2');
     drinkName.innerHTML = cocktail.drinks[0].strDrink;
-
     drinkSection.appendChild(drinkName);
 
     let img = document.createElement('img');
     img.src = cocktail.drinks[0].strDrinkThumb;
 
+    // = 1 so it won't show undefined 
     drinkSection.appendChild(img);
     for(let i = 1; i < 16; i++) {
         // console.log(i);
@@ -56,9 +53,8 @@ function displayRandomCocktail(cocktail) {
         drinkSection.appendChild(ingredient);
     }
 
-    let card = document.createElement('ons-card');
+    let card = document.createElement('card');
     card.innerHTML = cocktail.drinks[0].strInstructions;
-
     drinkSection.appendChild(card);
 
 }

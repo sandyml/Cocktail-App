@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:image" content="./photos/socialpreview.png">
-  <title>Sandra's-Cocktail-App</title>
-  <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet"href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/onsen/2.10.10/js/onsenui.min.js"></script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta property="og:image" content="./photos/socialpreview.png">
+ <title>Sandra's-Cocktail-App</title>
+ <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <link rel="stylesheet"href="style.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/onsen/2.10.10/js/onsenui.min.js"></script>
 </head>
-<body>
-
-  <ons-page>
-  <ons-tabbar swipeable position="auto">
-    <ons-tab page="home.html"label=""icon="fa-cocktail"active>
-    <!-- <button type="button" onClick="window.location.reload();">Random Cocktail</button> -->
-    <button id="button" type="button" onClick="window.location.reload();">RANDOM COCKTAIL</button>
-    </ons-tab>
-    </ons-tab>
-  </ons-tabbar>
-</ons-page>
 
 <template id="home.html">
   <ons-page id="home">
     <header><h1>Random Cocktail For You</h1></ons-page></header>
     <section id="drink-section"></section>
  </ons-page>
-</template>
+ </template>
+<body>
 
- <script src="index.js"></script>
- <div id="main-container"></div>
+  <ons-page>
+ <ons-tabbar swipeable position="auto">
+   <ons-tab page="home.html"label="" icon="fa-cocktail"active> 
+   <button id="button" type="button" onClick="window.location.reload();">RANDOM COCKTAIL</button>
+   </ons-tab>
+   </ons-tab>
+ </ons-tabbar>
+</ons-page>
+
+ 
+<script src="index.js"></script>
+<div id="main-container"></div>
 </body>
 <footer>
-  <div class="footer">
-  </div>
 </footer>
-
 </html>
