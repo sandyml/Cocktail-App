@@ -84,14 +84,12 @@ img {
     border-style: double;
 }
 
-.card {
+.manual {
     position: relative;
     display: auto;
     display: flex;
     flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: rgb(145, 70, 8);
+
 }
 
 button {
@@ -108,6 +106,15 @@ button {
     font-family: 'Roboto', sans-serif;
 }
 
+.ons-list-item {
+    display: block;
+    margin: 7px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #ae7e4e;
+    font-family: 'Segoe UI';
+}
+
 #main-container {
     background-size: 100%;
     height: 100px;
@@ -121,8 +128,7 @@ footer {
     /* image sourced from: https://www.etsy.com/listing/733374547/design-your-own-1000-drink-images */
     background-size: cover;
     height: 200px;
+    width: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0%;
 }
