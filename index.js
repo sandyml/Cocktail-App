@@ -1,17 +1,17 @@
-console.info('index.js loaded');
-
 document.addEventListener('prechange',function(event){
 document.querySelector('ons-toolbar .center')
     .innerHTML=event.tabItem.getAttribute('label');
 });
 
+
+// code for fetch https://web.dev/introduction-to-fetch/
 function getRandomCocktail() {
     fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
     .then(
     function(resp) {
         if (resp.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-            resp.status);
+        // console.log('Looks like there was a problem. Status Code: ' +
+        //     resp.status);
         return;
         }
         resp.json().then(function(data) {
@@ -21,7 +21,7 @@ function getRandomCocktail() {
     }
     )
     .catch(function(err) {
-    console.log('Fetch Error :-S', err);
+    // console.log('Fetch Error :-S', err);
     });
 }
 getRandomCocktail();
@@ -40,11 +40,10 @@ function displayRandomCocktail(cocktail) {
     drinkSection.appendChild(img);
     for(let i = 1; i < 16; i++) {
         // console.log(i);
-        console.log();
-
-        if(cocktail.drinks[0][`strIngredient${i}`] === null) {
+        // console.log();
+        if(cocktail.drinks[0][`strIngredient${i}`] == null || cocktail.drinks[0][`strIngredient${i}`] == '') {
             break;
-            //by doing this, all the 'null' ingredients will be removed and only keep the ingredients that the cocktails need, if it looks up the ingredients and its equal to null - no ingredients there then it breals out of the loop and moves on with any other code if there is any (remove this) 
+
         }
         
         let ingredient = document.createElement('ons-list-item');
@@ -53,8 +52,8 @@ function displayRandomCocktail(cocktail) {
         drinkSection.appendChild(ingredient);
     }
 
-    let card = document.createElement('card');
-    card.innerHTML = cocktail.drinks[0].strInstructions;
-    drinkSection.appendChild(card);
+    const manual = document.createElement('manual');
+    manual.innerHTML = cocktail.drinks[0].strInstructions;
+    drinkSection.appendChild(manual);
 
 }
