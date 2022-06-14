@@ -1,134 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100;1,600&display=swap');
+ 
 body {
-    display: block;
-    margin: 7px;
-    margin-bottom: 50px;
-    text-align: center;
-    background-color: #ae7e4e;
-    font-family:'Lucida Sans';
+   background-image: url("https://wallpaperaccess.com/full/1663692.jpg") ;
+   background-size: 107%;
+   font-size: 1.07rem;
+   font-family: 'HW Atlantic Medium' !important;
+   display: block;
+   margin: 7px;
+   margin-bottom: 50px;
+   text-align: center;
 }
-
+ 
+:root {
+   --Fern-Green: #55863F;
+   --Fern-Green-Dark: #92B184;
+}
+ 
 header {
-    background-image: url(https://i.etsystatic.com/6156248/r/il/ef5ec8/3831392983/il_1588xN.3831392983_3vwq.jpg);
-    /* image sourced from: https://www.etsy.com/listing/733374547/design-your-own-1000-drink-images */
-    background-size: cover;
-    box-sizing: border-box;
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Arial', bold;
+   box-sizing: border-box;
+   height: 130px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Arial', bold;
 }
-
+ 
 element.style {
-    display: block;
-    margin: auto;
-    cursor: zoom-out;
-    background-color: hsl(0, 0%, 90%);
-    transition: background-color 300ms;
+   display: block;
+   margin: auto;
+   cursor: zoom-out;
+   background-color: hsl(0, 0%, 90%);
+   transition: background-color 300ms;
 }
-
+ 
 h1 {
-    width: 100%;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-family: 'Arial';
-
+   width: 100%;
+   text-align: center;
+   color: rgb(0, 0, 0);
+   display: block;
+   font-size: 2em;
+   margin: 0%;
+   font-weight: bold;
+   color: aliceblue;
+   justify-content: center;
+   font: 'HW Atlantic Medium' !important;
 }
-  
-#list-item__center {
-    width: 100%;
-    text-align: center;
+ 
+h2 {
+   text-align: center;
+   display: block;
+   font-size: 1.5em;
+   margin: 0%;
+   font-weight: bold;
+   color: aliceblue;
+   justify-content: center;
+   font: 'HW Atlantic Medium' !important;
 }
-
-img {
-    display: flex;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
+ 
+h4 {
+   text-align: center;
+   display: block;
+   font-size: 1.5em;
+   margin-block-start: 0.83em;
+   margin-block-end: 0.83em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   font-weight: bold;
+   color: aliceblue;
+   justify-content: center;
+   font-family: 'HW Atlantic Medium' !important;
+   padding: 0.15rem 0.1rem;
 }
-
+ #list-item__center {
+   width: 100%;
+   text-align: center;
+}
+ 
 .drink-thumbnail {
-    width: 200px;
-    border-radius: 50%;
-    order: -2;
-    border: 3px solid whitesmoke;
-    margin-top: 20px;
+   width: 200px;
+   border-radius: 50%;
+   order: -2;
+   color: aliceblue;
+   margin-top: 20px;
 }
-
+ 
+blockquote {
+   text-align: center;
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 50px;
+   margin-inline-end: 50px;
+   color: aliceblue;
+   font-style: italic;
+   font-family: 'Lucida Sans Unicode';
+}
+ 
+cite {
+   text-align: center;
+   display: block;
+   font-style: italic;
+   color: aliceblue;
+}
+ 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
-
+ 
 #strIngredient {
-    display: middle;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+   display: middle;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
+ 
 #drink-section img {
-    vertical-align: middle;
-    width: 30%;
-    height: auto;
-    text-align: center;
-    border-style: double;
+   vertical-align: middle;
+   text-align: center;
+   border-style: solid;
+   width: 310x;
+   height: 310px;
+   border-radius: 50%;
+   margin: 0 auto;
+ 
 }
-
+ 
 #strDrink {
-    vertical-align: middle;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    border-style: double;
+   vertical-align: middle;
+   width: 100%;
+   height: auto;
+   text-align: center;
+   border-style: double;
 }
-
-.manual {
-    position: relative;
-    display: auto;
-    display: flex;
-    flex-direction: column;
-
+ 
+manual {
+   position: relative;
+   display: auto;
+   display: flex;
+   flex-direction: column;
+   color: aliceblue;
+   font-family: 'HW Atlantic Medium' !important;
 }
-
+ 
+.list-item__center {
+   position: relative;
+   display: auto;
+   display: flex;
+   flex-direction: column;
+   color: aliceblue;
+   font-family: 'HW Atlantic Medium' !important;
+}
+ 
 button {
-    background-color: rgb(172, 132, 64);
-    text-rendering: auto;
-    color: rgb(0, 0, 0);
-    border: 3px solid rgb(0, 0, 0);
-    line-height: normal;
-    word-spacing: normal;
-    border-style: double;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+   font-family: inherit;
+   font-size: 1.07rem;
+   cursor: pointer;
+   outline: 0;
+   background-color: #92B184;
+   width: 210px;
+   height: 80px;
+   border: solid;
+   border-top-right-radius: 2rem;
+   border-bottom-left-radius: 2rem;
+   background: #92B184;
+   color: rgb(0, 0, 0);
 }
-
+ 
 .ons-list-item {
-    display: block;
-    margin: 7px;
-    margin-bottom: 50px;
-    text-align: center;
-    background-color: #ae7e4e;
-    font-family: 'Segoe UI';
+   display: block;
+   margin: 7px;
+   margin-bottom: 50px;
+   text-align: center;
+   font-family: 'Segoe UI';
+   background: aliceblue;
+   color: #55863F;
+   font-weight: 600;
+   /* display: inline-block, center; */
+   border-radius: 0.1rem;
+   padding: 0.15rem 0.1rem;
 }
-
+ 
 #main-container {
-    background-size: 100%;
-    height: 100px;
-    display: block;
-    justify-content: center;
-    align-items: center;
+   background-size: 100%;
+   height: 100px;
+   display: block;
+   justify-content: center;
+   align-items: center;
 }
 
-footer {
-    background-image: url(https://i.etsystatic.com/6156248/r/il/ef5ec8/3831392983/il_1588xN.3831392983_3vwq.jpg);
-    /* image sourced from: https://www.etsy.com/listing/733374547/design-your-own-1000-drink-images */
-    background-size: cover;
-    height: 200px;
-    width: auto;
-    display: flex;
-    padding: 0%;
-}
