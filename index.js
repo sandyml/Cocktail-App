@@ -1,7 +1,15 @@
-document.addEventListener('prechange',function(event){
-    document.querySelector('ons-toolbar .center')
-       .innerHTML=event.tabItem.getAttribute('label');
-    });
+document.addEventListener('prechange', ({ target, tabItem }) => {
+    if (target.matches('#tabbar')) {
+      document.querySelector('#home-toolbar .center').innerHTML = tabItem.getAttribute('label');
+    }
+  });
+
+let url = 'https://www.thecocktaildb.com/api/json/v1/1/random.php'
+
+// document.addEventListener('prechange',function(event){
+//     document.querySelector('ons-toolbar .center')
+//        .innerHTML=event.tabItem.getAttribute('label');
+//     });
      
      
     // code for fetch https://web.dev/introduction-to-fetch/

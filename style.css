@@ -71,7 +71,8 @@ h4 {
    font-family: 'HW Atlantic Medium' !important;
    padding: 0.15rem 0.1rem;
 }
- #list-item__center {
+
+#list-item__center {
    width: 100%;
    text-align: center;
 }
